@@ -17,7 +17,7 @@ class reg_block extends uvm_reg_block;
   endfunction
   
   function void build;
-     add_hdl_path("dut","RTL");
+     
     uvm_reg::include_coverage("*",UVM_CVR_ALL);
     
     intr_reg_inst=intr_reg::type_id::create("intr_reg_inst");
