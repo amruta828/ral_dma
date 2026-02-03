@@ -25,6 +25,7 @@ class dma_env extends uvm_env;
    uvm_config_db#(reg_block)::set(this,
   "agt.sqr.*", "reg_model", reg_model);
 
+reg_model.set_hdl_path_root("top.DUT");
 
   endfunction
 
